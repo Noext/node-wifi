@@ -15,6 +15,8 @@ function scanWifi(config, callback) {
       }
 
       var lines = scanResults.split('\n');
+    console.log(lines);
+    console.log(scanResults);
       var networks = [];
       for (var i = 0 ; i < lines.length ; i++) {
         if (lines[i] != '') {
